@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:gravity="left"
+            android:src="@mipmap/btn_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="登录"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/h"
+            android:textColorHint="#ccc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="账号"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:textColorHint="#d7d7d7"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_weight="8"
+            android:hint="手机号/邮箱/用户名/门店会员卡" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:id="@+id/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密码"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            />
+
+        <com.hhzmy.view.ClearableEditText
+            android:id="@+id/edit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#d7d7d7"
+            android:layout_margin="10dp"
+            android:layout_weight="8"
+            android:hint="请输入6-20位红孩子密码            "
+            android:layout_alignParentTop="true"
+            />
+        <Button
+            android:id="@+id/btnPassword"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="验证码"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="18dp"
+            android:textSize="20dp"
+            android:layout_weight="0.08"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            android:textColorHint="#d7d7d7"
+            android:layout_weight="4"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp" />
+        <ImageView
+            android:id="@+id/vc_image"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+             />
+        <Button
+            android:id="@+id/vc_shuaixi"
+            android:layout_weight="2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="点击刷新"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/lu"
+        android:layout_below="@id/r4"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+    <TextView
+
+        android:layout_below="@id/lu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码！"
+        android:layout_alignParentRight="true"
+        android:id="@+id/textView2" />
+
+
+
+<!--<ImageView-->
+    <!--android:id="@+id/vip"-->
+    <!--android:layout_below="@id/textView2"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:src="@mipmap/icon_store_membership_card"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_below="@id/vip"-->
+        <!--android:text="门店会员卡"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"/>-->
+
+    <ImageView
+        android:id="@+id/ce"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/btn_register_normal"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
